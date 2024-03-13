@@ -7,6 +7,7 @@ void find3Largest(int arr[],int n){
         cout<<"Invalid Input";
         return;
     }
+    t=f=s=INT_MIN;
     for(int i=0;i<n;i++){
         if(arr[i]>f){
             t=s;
@@ -18,7 +19,7 @@ void find3Largest(int arr[],int n){
             s=arr[i];
         }
         else if(arr[i]>t && arr[i]<s && arr[i]<f){
-            arr[i]=t;
+            t=arr[i];
         }
     }
     cout<<"Three Largest Number's are: "<<f<<" "<<s<<" "<<t<<endl;

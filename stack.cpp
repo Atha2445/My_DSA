@@ -10,7 +10,7 @@ int main(){
         s.push(ele);
     }
     while(!s.empty()){
-        cout<<s.bottom()<<" ";
+        cout<<s.top()<<" ";
         s.pop();
     }
     return 0;
